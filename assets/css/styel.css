@@ -94,23 +94,26 @@ body {
     text-align: center;
     color: #FFFFFF;
     margin-top: 100px;
-    margin-left: -150px;
+    left: -100px;
 }
 
 .content_left img {
     margin-top: 200px;
     width: 400px;
-    margin-left: -150px;
+    left: -100px;
+    position: absolute;
 }
+@media(min-width: 400px) and (max-width:766px){
 
+}
 @media(max-width:767px) {
     .container{
       overflow-x:hidden ;
     }
 
     .content_left {
-        margin: auto;
-        margin-left: 180px;
+        /*margin: auto;*/
+        left: 130px;
     }
 
     .content_left h1 {
@@ -118,13 +121,15 @@ body {
     }
 
     .content_left img {
-        width: 300px;
+        width: 200px !important;
+        left: -50px !important;
 
     }
 
 
     .content_right h2 {
         font-size: 15px;
+        margin-top: 400px;
     }
 
     #user,
@@ -153,17 +158,17 @@ body {
     }
     
     .content_left {
-        margin: auto;
+        /*margin: auto;*/
     }
 
     .content_left h1 {
         font-size: 40px;
-        margin-left: 10px;
+        left: 10px;
     }
 
     .content_left img {
-        width: 300px;
-        margin-left: 1px;
+        width: 250px;
+        left: 0px;
 
     }
     .content_right h2 {
@@ -187,10 +192,32 @@ body {
  
 
 }
+@media(min-width: 992px) and (max-width: 1400px) {
+    body {
+        background-size: 115% 210%;
+
+    }
+
+    .content_left {
+        left: 10px;
+    }
+
+    .content_left h1 {
+        font-size: 40px;
+        left: 10px;
+    }
+
+    .content_left img {
+        width: 300px;
+        left: 0px;
+
+    }
+    .content_right h2 {
+        font-size: 15px;
+    }
+
+}
 @media(min-width: 1200px) {
-    
-    
-    
     }
 
 
